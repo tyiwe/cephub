@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Busca de Endereço</h1>
+    </header>
+
+    <main>
+        <form id="searchForm">
+            <label for="cepInput">Digite um CEP</label>
+            <input id="cepInput" type="text" placeholder="Ex: 01310930" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <p id="mensagem" role="status"></p>
+
+        <article id="enderecoCard" hidden>
+            <ul>
+                <li>Rua: <span id="campoRua"></span></li>
+                <li>Bairro: <span id="campoBairro"></span></li>
+                <li>Cidade: <span id="campoCidade"></span></li>
+                <li>Estado: <span id="campoEstado"></span></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>Dados: ViaCEP</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
